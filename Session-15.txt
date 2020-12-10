@@ -1,0 +1,63 @@
+Session-15
+------------
+
+Create an app employee and create new employee and viewemployee
+
+proper urls, configurations,settings
+
+Creating Templates along with rendering with Data
+
+- in django convention we have to pass our data to a template using dictionary format
+- we use render method to return a template.
+- the render method takes 
+	arg1 - request
+	arg2 - templatename
+	arg3 - optional as a dictionary
+
+
+doctors = [
+	{'id':2345,
+	 'name':'Shanjay',
+	'qlf':'MD',
+	'spe':'ortho'
+	},
+	{'id':2213,
+	 'name':'Ramesh Babu',
+	'qlf':'MS',
+	'spe':'Neuro'
+	},
+	{'id':8965,
+	 'name':'Mohamad',
+	'qlf':'MBBS',
+	'spe':'General'
+	}
+	]
+
+
+
+Template Inheritance in Django
+-------------------------------
+
+- in django we can minimize the design code by using template inheritance.
+- we have to use a "A base.html as our starting point and keep inherit to other templates using"
+{% block content %}
+
+{% endblock %}
+
+- we have to use in our templates as 
+{% extends 'appname/base.html' %}
+
+- in order to link or refer we use django function
+   "{% url 'resoursename' %}"
+  which works same as {% url_for() %} which is in flask.
+
+
+create list of patients list and route them.
+
+
+
+
+
+
+
+
