@@ -8,6 +8,7 @@ public class TestDemo{
     public void testMethod1()
     {  
         assertEquals(1, PrimeTest.test(3));  
+        //test ing
     }  
     
     @Test  
